@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+
+	<head>
+	
+	<style>
+	#header {
+
+		color:white;
+		text-align:center;
+		padding:5px;
+		}
+	#footer {
+	
+		color:white;
+		clear:both;
+		text-align:center;
+		padding:5px;
+		}
+	#sidebar {
+		position:fixed;}
+	</style>
+		<meta charset="utf-8">
+		<title>设计思路</title>
+		
+		<link href="https://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="bootstrap-2.3.2/docs/assets/css/docs.css" rel="stylesheet">
+<style>
+	body{font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+</style>
+		<link href="bootstrap-2.3.2/docs/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+	</head>
+	
+	
+	<body data-spy="scroll" data-target=".bs-docs-sidebar">
+	<!-- Subhead
+================================================== -->
+	<header class="jumbotron subhead" id="overview">
+	  <div class="container">
+	  <div id="header">
+	    <h2>设计思路</h2>
+		</div>
+	  </div>
+	 </header>
+	 
+	 <div class="container">
+	 
+
+	 <!-- Docs nav
+    ================================================== -->
+	   <div class="row">
+			<div class="span3 bs-docs-sidebar"><div id="sidebar">
+				<ul class="nav nav-list bs-docs-sidenav">
+					<li><a href="#wg"><i class="icon-chevron-right"></i>问卷设计思路</a></li>
+					<li><a href="#sy"><i class="icon-chevron-right"></i>数据分析思路</a></li>
+				</ul>
+			</div></div>
+			<div class="span9">
+		
+			<!--问卷设计思路-->
+			<section id="wg">
+				<div class="page-header">
+					<h1>问卷设计思路</h1>
+				</div>
+				
+				<h3>设计逻辑</h3>
+				<p>分为五个板块：①被试基本信息  ②平时购买力测量  ③被试间随机：三种情绪唤起 ④李克特量表测量情绪 ⑤当下购买力测量</p>
+				<h3>数据处理方法</h3>
+				<p>1.积极、消极、中性唤起组在正负性情绪问卷得分上是否存在显著差异（单因素方差分析）。来检验情绪唤起是否有效。<br/>
+                   2.在1情绪唤起有效的条件下，进行三种情绪组预期花钱金额是否存在差异的检验（单因素方差分析――事后检验）。<br/>
+                   3.可进行下一步两因素方差分析，分别为年龄×情绪，性别×情绪，收入×情绪，收入来源×情绪（两因素方差分析）。交互作用显著的情况下可以进行下一步的简单效应检验。</p>
+				<h3>预期结果</h3>
+				<p>1.三种情绪唤起组情绪得分存在显著差异，M(积极情绪组）>M（中性情绪组）>M（消极情绪组）。<br/>
+				   2.三组购买力两两之间均存在显著差异：M（消极情绪）>M（积极情绪）>M（中性情绪）。<br/>
+				   3.两因素方差分析中，年龄和收入来源的主效应不显著，性别和收入的主效应显著，在购买力上：M（性别女）>M（性别男），M（收入高）>M（收入低）。其中性别与情绪的交互作用显著，女性的购买力受情绪影响更大。</p>
+			
+			</section>
+			
+			
+			
+			<!--实验设计思路-->
+			<section id="sy">
+				<div class="page-header">
+					<h1>数据分析思路</h1>
+				</div>
+				
+			<h3>设计逻辑</h3>
+			<p>实验流程:总指导语、练习模块、正式实验指导语、正式实验模块、结束语。</p>
+			<p>被试间设计：根据被试编号将被试分为三组：第一组诱导产生积极情绪；第二组诱导产生消极情绪；第三组诱导产生中性情绪。</p>
+			<p>被试内设计：诱发每一种情绪都用三种材料—6张图片、1个音频、3条文字，其中图片和文字中的刺激随机呈现。</p>
+			<p>跳过逻辑：诱发情绪之后，如果被试没有自评为“正确”的情绪，那么他的数据不被记录，即“跳过”；只有自评为“正确”的情绪，才记录被试的数据。</p>
+			<p>正式实验模块包括:①平时每月在书籍和零食上的花销②相应诱发情绪的刺激③情绪自评④在相应情绪下的购买欲望。</p>
+			<h3>数据预处理</h3>
+			<p>剔除不符合“正确”情绪的被试数据。</p>
+			<p>数据整理：每名被试有2组数据（基线和测量数据），每组有30名被试，共有90名被试。</p>
+			<p>将题目中的文字信息转换成数据：会增加很多—500，会增加一点—200，不会增加很多—100，不会增加—0，不知道— -200。</p>
+			
+			<h3>数据分析方法</h3>
+			<p>1、方法：针对本实验3×3混合设计，采用多样本方差分析，三组被试之间是否存在显著性差异。<br/>2、方法：每组的被试之间，采用重复测量方差分析，在那种情绪水平下，被试的消费水平变化大。<br/>3、方法：采用回归的方法，是否可以拟合出三种情绪水平下被试购买欲望的变化趋势。</p>
+			
+			<h3>预期结果</h3>
+			<p>1、三组之间都存在购买欲望的显著性差异。<br/>
+第一组和第二组之间存在显著性差异，可能的原因是第二组即在消极情绪下购买欲望比积极情绪下购买欲望提高更多。<br/>
+第一组和第三组之间存在显著性差异，可能的原因是积极情绪下购买欲望增加，而中性情绪下购买欲望基本不变。<br/>
+第二组和第三组同理。</p>
+			<p>2、第一组的被试购买欲望水平增加，第二组的被试购买欲望水平增加且远大于第一组，第三组的被试购买欲望基本不变。</p>
+			<p>3、预期第一组被试增加曲线是上升直线，第二组是二次曲线，第三组基本上是水平直线。</p>
+			</section>
+		</div>
+		</div>
+		</div>
+		
+	<footer class="footer">
+		<div class="container">
+		<div id="footer">
+			<p>最终解释权归北师大心理学部某实验心理学实验小组所有</p>
+		</div>
+		</div>
+	</footer>
+</body>
+</html>
